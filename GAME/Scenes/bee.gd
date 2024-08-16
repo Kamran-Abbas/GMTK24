@@ -16,3 +16,5 @@ func _process(delta):
 		drct.flip_h = false
 	position.x += direction *  60 * delta
 
+
+

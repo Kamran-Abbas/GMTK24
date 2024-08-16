@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c45did1o8f6ui"]
+[gd_scene load_steps=12 format=3 uid="uid://c45did1o8f6ui"]
 
 [ext_resource type="PackedScene" uid="uid://xox7v3rell11" path="res://Scenes/player.tscn" id="1_h811e"]
 [ext_resource type="PackedScene" uid="uid://b530bredtojb0" path="res://Scenes/chicken.tscn" id="2_sytwa"]
@@ -6,7 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dclbdj6lt5cya" path="res://Scenes/pig.tscn" id="3_x378s"]
 [ext_resource type="PackedScene" uid="uid://c0xj3cgorm7oc" path="res://Scenes/cow.tscn" id="4_tuup5"]
 [ext_resource type="Texture2D" uid="uid://clh5bh78r72r" path="res://Assets/world_tileset.png" id="4_uc228"]
-[ext_resource type="PackedScene" path="res://Scenes/bee.tscn" id="7_bpn1i"]
+[ext_resource type="PackedScene" uid="uid://ci6mfm445v0jl" path="res://Scenes/bee.tscn" id="7_bpn1i"]
+[ext_resource type="PackedScene" uid="uid://cfsicv56xb5h4" path="res://Scenes/killzone.tscn" id="8_qg622"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -400,6 +401,8 @@ texture = ExtResource("4_uc228")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_cuhmi")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lr7bf"]
+
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_h811e")]
@@ -429,3 +432,9 @@ position = Vector2(229, 29)
 
 [node name="Bee" parent="." instance=ExtResource("7_bpn1i")]
 position = Vector2(-43, -57)
+
+[node name="Killzone" parent="." instance=ExtResource("8_qg622")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, 181)
+shape = SubResource("WorldBoundaryShape2D_lr7bf")
