@@ -1,7 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://xox7v3rell11"]
+[gd_scene load_steps=22 format=3 uid="uid://xox7v3rell11"]
 
 [ext_resource type="Texture2D" uid="uid://0j3ub74gg62k" path="res://Assets/Idle.png" id="1_80mf1"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_n840f"]
 [ext_resource type="Texture2D" uid="uid://2juc3a37qx65" path="res://Assets/Run.png" id="2_8jhp8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73bqe"]
+size = Vector2(43, 72)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4240i"]
 atlas = ExtResource("1_80mf1")
@@ -129,10 +133,13 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_n840f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_73bqe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_10ba0")
-animation = &"run"
-frame_progress = 0.141438
+animation = &"idle"
+autoplay = "idle"
