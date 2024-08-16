@@ -1,6 +1,6 @@
 extends Node2D
 
-var direction = 1
+var direction = -1
 
 @onready var drct = $AnimatedSprite2D
 

@@ -5,3 +5,5 @@
 [node name="Game" type="Node2D"]
 
 [node name="Chicken" parent="." instance=ExtResource("1_6m4yy")]
+
+[node name="Camera2D" type="Camera2D" parent="Chicken"]
