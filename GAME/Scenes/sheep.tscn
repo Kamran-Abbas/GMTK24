@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgq5fw64natgy"]
+[gd_scene load_steps=8 format=3 uid="uid://dgq5fw64natgy"]
 
 [ext_resource type="Texture2D" uid="uid://bwac7npbeduya" path="res://Assets/sheep_walk.png" id="1_2lnt6"]
 
@@ -38,15 +38,23 @@ animations = [{
 "speed": 6.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_xqqdg"]
+radius = 23.0
+
 [node name="Sheep" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j5jw8")
 animation = &"walk"
-frame_progress = 0.368253
+autoplay = "walk"
+frame_progress = 0.725543
 
 [node name="RayRight" type="RayCast2D" parent="."]
 target_position = Vector2(25, 0)
 
 [node name="RayLeft" type="RayCast2D" parent="."]
 target_position = Vector2(-25, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0)
+shape = SubResource("CircleShape2D_xqqdg")

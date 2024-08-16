@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bypj2du38tfj"]
+[gd_scene load_steps=9 format=3 uid="uid://b530bredtojb0"]
 
 [ext_resource type="Script" path="res://Chicken.gd" id="1_p6fcj"]
-[ext_resource type="Texture2D" uid="uid://bqq5pw4o1i5r" path="res://Assets/chicken_walk.webp" id="2_v0uuk"]
+[ext_resource type="Texture2D" uid="uid://jo3mmiicilo2" path="res://Assets/chicken_walk.webp" id="2_v0uuk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ld1gq"]
 atlas = ExtResource("2_v0uuk")
@@ -39,6 +39,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ia5ut"]
+radius = 14.0357
+
 [node name="Chicken" type="Node2D"]
 script = ExtResource("1_p6fcj")
 
@@ -51,3 +54,6 @@ target_position = Vector2(22, 0)
 
 [node name="rayleft" type="RayCast2D" parent="."]
 target_position = Vector2(-23, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ia5ut")

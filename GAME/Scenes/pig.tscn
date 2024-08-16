@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://dclbdj6lt5cya"]
+
+[ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/pig_walk.png" id="1_yjft0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yt4w7"]
+atlas = ExtResource("1_yjft0")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_invrs"]
+atlas = ExtResource("1_yjft0")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vigxr"]
+atlas = ExtResource("1_yjft0")
+region = Rect2(256, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6ypm"]
+atlas = ExtResource("1_yjft0")
+region = Rect2(384, 384, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yt4w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_invrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vigxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6ypm")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xqqdg"]
+radius = 24.0
+
+[node name="Sheep" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j5jw8")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.099527
+
+[node name="RayRight" type="RayCast2D" parent="."]
+target_position = Vector2(31, 0)
+
+[node name="RayLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-27, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 3)
+shape = SubResource("CircleShape2D_xqqdg")
