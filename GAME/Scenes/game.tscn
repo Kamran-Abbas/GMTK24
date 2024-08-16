@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://60gk52cvpb5m"]
+[gd_scene load_steps=7 format=3 uid="uid://c45did1o8f6ui"]
 
 [ext_resource type="PackedScene" uid="uid://xox7v3rell11" path="res://Scenes/player.tscn" id="1_h811e"]
 [ext_resource type="PackedScene" uid="uid://b530bredtojb0" path="res://Scenes/chicken.tscn" id="2_sytwa"]
 [ext_resource type="PackedScene" uid="uid://dgq5fw64natgy" path="res://Scenes/sheep.tscn" id="3_2cqk0"]
-[ext_resource type="Texture2D" path="res://Assets/world_tileset.png" id="4_uc228"]
+[ext_resource type="Texture2D" uid="uid://clh5bh78r72r" path="res://Assets/world_tileset.png" id="4_uc228"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -404,7 +404,7 @@ position = Vector2(7, 40)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-2, -5)
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 
 [node name="Chicken" parent="." instance=ExtResource("2_sytwa")]
 position = Vector2(-96, 36)

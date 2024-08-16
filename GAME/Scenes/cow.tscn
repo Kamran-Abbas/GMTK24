@@ -47,7 +47,7 @@ radius = 34.0147
 sprite_frames = SubResource("SpriteFrames_j5jw8")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.456098
+frame_progress = 0.449646
 
 [node name="RayRight" type="RayCast2D" parent="."]
 target_position = Vector2(46, 0)
