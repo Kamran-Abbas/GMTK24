@@ -39,8 +39,8 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xqqdg"]
-radius = 34.0147
+[sub_resource type="CircleShape2D" id="CircleShape2D_omwrv"]
+radius = 12.1655
 
 [node name="Cow" type="Node2D"]
 script = ExtResource("1_jd8ug")
@@ -57,6 +57,12 @@ target_position = Vector2(46, 0)
 [node name="RayLeft" type="RayCast2D" parent="."]
 target_position = Vector2(-31, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 position = Vector2(6, 1)
-shape = SubResource("CircleShape2D_xqqdg")
+collision_layer = 9
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_omwrv")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

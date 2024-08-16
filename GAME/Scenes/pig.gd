@@ -17,3 +17,5 @@ func _process(delta):
 		drct.flip_h = false
 	position.x += direction *  360 * delta
 
+func _on_area_2d_body_entered(body):
+	queue_free()

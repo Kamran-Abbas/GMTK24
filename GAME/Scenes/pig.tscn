@@ -39,8 +39,8 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xqqdg"]
-radius = 24.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_wir2i"]
+radius = 12.1655
 
 [node name="Pig" type="Node2D"]
 script = ExtResource("1_7ecup")
@@ -57,6 +57,11 @@ target_position = Vector2(31, 0)
 [node name="RayLeft" type="RayCast2D" parent="."]
 target_position = Vector2(-27, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, 3)
-shape = SubResource("CircleShape2D_xqqdg")
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 17
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_wir2i")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
