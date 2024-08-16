@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c45did1o8f6ui"]
+[gd_scene load_steps=5 format=3 uid="uid://c45did1o8f6ui"]
 
-[ext_resource type="PackedScene" uid="uid://bypj2du38tfj" path="res://Scenes/chicken.tscn" id="1_6m4yy"]
+[ext_resource type="PackedScene" uid="uid://b530bredtojb0" path="res://Scenes/chicken.tscn" id="1_6m4yy"]
+[ext_resource type="PackedScene" uid="uid://dgq5fw64natgy" path="res://Scenes/sheep.tscn" id="2_eo6ye"]
+[ext_resource type="PackedScene" uid="uid://dclbdj6lt5cya" path="res://Scenes/pig.tscn" id="3_x378s"]
+[ext_resource type="PackedScene" uid="uid://c0xj3cgorm7oc" path="res://Scenes/cow.tscn" id="4_tuup5"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Chicken" parent="." instance=ExtResource("1_6m4yy")]
 
 [node name="Camera2D" type="Camera2D" parent="Chicken"]
+
+[node name="Sheep" parent="." instance=ExtResource("2_eo6ye")]
+
+[node name="Pig" parent="." instance=ExtResource("3_x378s")]
+
+[node name="Cow" parent="." instance=ExtResource("4_tuup5")]
