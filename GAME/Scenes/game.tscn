@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dclbdj6lt5cya" path="res://Scenes/pig.tscn" id="3_x378s"]
 [ext_resource type="PackedScene" uid="uid://c0xj3cgorm7oc" path="res://Scenes/cow.tscn" id="4_tuup5"]
 [ext_resource type="Texture2D" uid="uid://clh5bh78r72r" path="res://Assets/world_tileset.png" id="4_uc228"]
-[ext_resource type="PackedScene" uid="uid://ci6mfm445v0jl" path="res://Scenes/bee.tscn" id="7_bpn1i"]
+[ext_resource type="PackedScene" path="res://Scenes/bee.tscn" id="7_bpn1i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -428,4 +428,4 @@ position = Vector2(-279, 26)
 position = Vector2(229, 29)
 
 [node name="Bee" parent="." instance=ExtResource("7_bpn1i")]
-position = Vector2(-56, 22)
+position = Vector2(-43, -57)
