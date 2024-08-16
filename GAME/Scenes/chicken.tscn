@@ -1,38 +1,38 @@
 [gd_scene load_steps=9 format=3 uid="uid://b530bredtojb0"]
 
 [ext_resource type="Script" path="res://Chicken.gd" id="1_p6fcj"]
-[ext_resource type="Texture2D" uid="uid://jo3mmiicilo2" path="res://Assets/chicken_walk.webp" id="2_v0uuk"]
+[ext_resource type="Texture2D" uid="uid://cmqnupyh3o5qd" path="res://Assets/chicken_walk.png" id="2_dsvw4"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ld1gq"]
-atlas = ExtResource("2_v0uuk")
-region = Rect2(0, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_uf4ek"]
+atlas = ExtResource("2_dsvw4")
+region = Rect2(0, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f5kxm"]
-atlas = ExtResource("2_v0uuk")
-region = Rect2(32, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vahn1"]
+atlas = ExtResource("2_dsvw4")
+region = Rect2(32, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fh0qx"]
-atlas = ExtResource("2_v0uuk")
-region = Rect2(64, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_1psei"]
+atlas = ExtResource("2_dsvw4")
+region = Rect2(64, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ph4m1"]
-atlas = ExtResource("2_v0uuk")
-region = Rect2(96, 32, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w70vc"]
+atlas = ExtResource("2_dsvw4")
+region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_my1k0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ld1gq")
+"texture": SubResource("AtlasTexture_uf4ek")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f5kxm")
+"texture": SubResource("AtlasTexture_vahn1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fh0qx")
+"texture": SubResource("AtlasTexture_1psei")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ph4m1")
+"texture": SubResource("AtlasTexture_w70vc")
 }],
 "loop": true,
 "name": &"default",
@@ -40,7 +40,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ia5ut"]
-radius = 14.0357
+radius = 12.1655
 
 [node name="Chicken" type="Node2D"]
 script = ExtResource("1_p6fcj")
@@ -50,10 +50,10 @@ sprite_frames = SubResource("SpriteFrames_my1k0")
 autoplay = "default"
 
 [node name="rayright" type="RayCast2D" parent="."]
-target_position = Vector2(22, 0)
+target_position = Vector2(28, 0)
 
 [node name="rayleft" type="RayCast2D" parent="."]
-target_position = Vector2(-23, 0)
+target_position = Vector2(-27, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ia5ut")
