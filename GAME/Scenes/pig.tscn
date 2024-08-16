@@ -49,7 +49,7 @@ script = ExtResource("1_7ecup")
 sprite_frames = SubResource("SpriteFrames_j5jw8")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.845435
+frame_progress = 0.100896
 
 [node name="RayRight" type="RayCast2D" parent="."]
 target_position = Vector2(31, 0)

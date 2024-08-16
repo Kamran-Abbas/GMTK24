@@ -1,55 +1,46 @@
 [gd_scene load_steps=9 format=3 uid="uid://ci6mfm445v0jl"]
 
-[ext_resource type="Script" path="res://Scenes/pig.gd" id="1_gtbtk"]
-[ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/pig_walk.png" id="2_k7q3l"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yt4w7"]
-atlas = ExtResource("2_k7q3l")
-region = Rect2(0, 384, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_invrs"]
-atlas = ExtResource("2_k7q3l")
-region = Rect2(128, 384, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vigxr"]
-atlas = ExtResource("2_k7q3l")
-region = Rect2(256, 384, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t6ypm"]
-atlas = ExtResource("2_k7q3l")
-region = Rect2(384, 384, 128, 128)
+[ext_resource type="Script" path="res://Scenes/bee.gd" id="1_ml47b"]
+[ext_resource type="Texture2D" uid="uid://b5vpficdf07vq" path="res://Assets/Bee/Bee_0000_Capa-1.png" id="2_eoek3"]
+[ext_resource type="Texture2D" uid="uid://c6frtxqxl10q7" path="res://Assets/Bee/Bee_0001_Capa-2.png" id="3_h1vbd"]
+[ext_resource type="Texture2D" uid="uid://dd0uh3xo37hx0" path="res://Assets/Bee/Bee_0002_Capa-3.png" id="4_5ovqo"]
+[ext_resource type="Texture2D" uid="uid://bl2612krqx4n5" path="res://Assets/Bee/Bee_0003_Capa-4.png" id="5_u8jb7"]
+[ext_resource type="Texture2D" uid="uid://beteswr1r6hcm" path="res://Assets/Bee/Bee_0004_Capa-5.png" id="6_ehyda"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yt4w7")
+"texture": ExtResource("2_eoek3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_invrs")
+"texture": ExtResource("3_h1vbd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vigxr")
+"texture": ExtResource("4_5ovqo")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t6ypm")
+"texture": ExtResource("5_u8jb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ehyda")
 }],
 "loop": true,
 "name": &"walk",
-"speed": 6.0
+"speed": 10.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xqqdg"]
 radius = 24.0
 
-[node name="Pig" type="Node2D"]
-script = ExtResource("1_gtbtk")
+[node name="Bee" type="Node2D"]
+script = ExtResource("1_ml47b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j5jw8")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.845435
+frame_progress = 0.384435
 
 [node name="RayRight" type="RayCast2D" parent="."]
 target_position = Vector2(31, 0)
