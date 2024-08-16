@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgq5fw64natgy"]
+
+[ext_resource type="Texture2D" uid="uid://bwac7npbeduya" path="res://Assets/sheep_walk.png" id="1_ork8q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hv4d"]
+atlas = ExtResource("1_ork8q")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfid2"]
+atlas = ExtResource("1_ork8q")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnpvi"]
+atlas = ExtResource("1_ork8q")
+region = Rect2(256, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16brx"]
+atlas = ExtResource("1_ork8q")
+region = Rect2(384, 384, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hv4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfid2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnpvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16brx")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[node name="Sheep" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j5jw8")
+animation = &"walk"
+frame_progress = 0.764968
