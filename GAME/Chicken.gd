@@ -7,6 +7,8 @@ var direction = 1
 @onready var rayright = $rayright
 @onready var rayleft = $rayleft
 
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 func _process(delta):
 	if rayright.is_colliding():
 		direction = -1

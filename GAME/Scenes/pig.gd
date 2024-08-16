@@ -15,5 +15,5 @@ func _process(delta):
 	if rayleft.is_colliding():
 		direction = 1
 		drct.flip_h = false
-	position.x += direction *  60 * delta
+	position.x += direction *  360 * delta
 
