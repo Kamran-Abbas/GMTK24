@@ -44,6 +44,7 @@ radius = 12.1655
 
 [node name="Sheep" type="Node2D"]
 visibility_layer = 2
+scale = Vector2(0.59127, 0.59127)
 script = ExtResource("1_m0k0f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

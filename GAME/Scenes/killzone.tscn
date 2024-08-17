@@ -6,9 +6,14 @@
 collision_mask = 2
 script = ExtResource("1_uaaca")
 
-[node name="Timer" type="Timer" parent="." groups=["death"]]
-wait_time = 1.19
+[node name="RestartTimer" type="Timer" parent="." groups=["death"]]
+wait_time = 1.7
+one_shot = true
+
+[node name="DeathAnimTimer" type="Timer" parent="."]
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="RestartTimer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="RestartTimer" to="." method="_on_restart_timer_timeout"]
+[connection signal="timeout" from="DeathAnimTimer" to="." method="_on_death_anim_timer_timeout"]

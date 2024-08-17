@@ -43,6 +43,7 @@ animations = [{
 radius = 21.4709
 
 [node name="Pig" type="Node2D"]
+scale = Vector2(0.557123, 0.557123)
 script = ExtResource("1_idwft")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

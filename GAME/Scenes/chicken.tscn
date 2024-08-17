@@ -43,6 +43,7 @@ animations = [{
 radius = 12.1655
 
 [node name="Chicken" type="Node2D"]
+scale = Vector2(0.664296, 0.664296)
 script = ExtResource("1_qfwcy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
