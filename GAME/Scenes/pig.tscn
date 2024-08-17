@@ -1,38 +1,38 @@
 [gd_scene load_steps=9 format=3 uid="uid://dclbdj6lt5cya"]
 
 [ext_resource type="Script" path="res://Scripts/pig.gd" id="1_idwft"]
-[ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/pig_walk.png" id="1_yjft0"]
+[ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/Animals/pig_walk.png" id="2_4fybe"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yt4w7"]
-atlas = ExtResource("1_yjft0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvxm5"]
+atlas = ExtResource("2_4fybe")
 region = Rect2(0, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_invrs"]
-atlas = ExtResource("1_yjft0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_k50rh"]
+atlas = ExtResource("2_4fybe")
 region = Rect2(128, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vigxr"]
-atlas = ExtResource("1_yjft0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ter8u"]
+atlas = ExtResource("2_4fybe")
 region = Rect2(256, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t6ypm"]
-atlas = ExtResource("1_yjft0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1i68"]
+atlas = ExtResource("2_4fybe")
 region = Rect2(384, 384, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yt4w7")
+"texture": SubResource("AtlasTexture_rvxm5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_invrs")
+"texture": SubResource("AtlasTexture_k50rh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vigxr")
+"texture": SubResource("AtlasTexture_ter8u")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t6ypm")
+"texture": SubResource("AtlasTexture_g1i68")
 }],
 "loop": true,
 "name": &"walk",

@@ -1,38 +1,38 @@
 [gd_scene load_steps=9 format=3 uid="uid://b530bredtojb0"]
 
 [ext_resource type="Script" path="res://Scripts/Chicken.gd" id="1_qfwcy"]
-[ext_resource type="Texture2D" uid="uid://cmqnupyh3o5qd" path="res://Assets/chicken_walk.png" id="2_dsvw4"]
+[ext_resource type="Texture2D" uid="uid://cmqnupyh3o5qd" path="res://Assets/Animals/chicken_walk.png" id="2_f46pg"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uf4ek"]
-atlas = ExtResource("2_dsvw4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_itgij"]
+atlas = ExtResource("2_f46pg")
 region = Rect2(0, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vahn1"]
-atlas = ExtResource("2_dsvw4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ork5n"]
+atlas = ExtResource("2_f46pg")
 region = Rect2(32, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1psei"]
-atlas = ExtResource("2_dsvw4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp3jh"]
+atlas = ExtResource("2_f46pg")
 region = Rect2(64, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w70vc"]
-atlas = ExtResource("2_dsvw4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuxen"]
+atlas = ExtResource("2_f46pg")
 region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_my1k0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uf4ek")
+"texture": SubResource("AtlasTexture_itgij")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vahn1")
+"texture": SubResource("AtlasTexture_ork5n")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1psei")
+"texture": SubResource("AtlasTexture_mp3jh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w70vc")
+"texture": SubResource("AtlasTexture_yuxen")
 }],
 "loop": true,
 "name": &"default",

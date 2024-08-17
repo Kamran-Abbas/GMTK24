@@ -1,30 +1,30 @@
 [gd_scene load_steps=10 format=3 uid="uid://ci6mfm445v0jl"]
 
 [ext_resource type="Script" path="res://Scripts/bee.gd" id="1_iwlw1"]
-[ext_resource type="Texture2D" uid="uid://b5vpficdf07vq" path="res://Assets/Bee/Bee_0000_Capa-1.png" id="2_eoek3"]
-[ext_resource type="Texture2D" uid="uid://c6frtxqxl10q7" path="res://Assets/Bee/Bee_0001_Capa-2.png" id="3_h1vbd"]
-[ext_resource type="Texture2D" uid="uid://dd0uh3xo37hx0" path="res://Assets/Bee/Bee_0002_Capa-3.png" id="4_5ovqo"]
-[ext_resource type="Texture2D" uid="uid://bl2612krqx4n5" path="res://Assets/Bee/Bee_0003_Capa-4.png" id="5_u8jb7"]
-[ext_resource type="Texture2D" uid="uid://beteswr1r6hcm" path="res://Assets/Bee/Bee_0004_Capa-5.png" id="6_ehyda"]
+[ext_resource type="Texture2D" uid="uid://b5vpficdf07vq" path="res://Assets/Animals/Bee/Bee_0000_Capa-1.png" id="2_8acld"]
+[ext_resource type="Texture2D" uid="uid://c6frtxqxl10q7" path="res://Assets/Animals/Bee/Bee_0001_Capa-2.png" id="3_bbni2"]
+[ext_resource type="Texture2D" uid="uid://dd0uh3xo37hx0" path="res://Assets/Animals/Bee/Bee_0002_Capa-3.png" id="4_sv3fi"]
+[ext_resource type="Texture2D" uid="uid://bl2612krqx4n5" path="res://Assets/Animals/Bee/Bee_0003_Capa-4.png" id="5_joge1"]
+[ext_resource type="Texture2D" uid="uid://beteswr1r6hcm" path="res://Assets/Animals/Bee/Bee_0004_Capa-5.png" id="6_ly7cb"]
 [ext_resource type="PackedScene" uid="uid://cfsicv56xb5h4" path="res://Scenes/killzone.tscn" id="7_s7mgs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_eoek3")
+"texture": ExtResource("2_8acld")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_h1vbd")
+"texture": ExtResource("3_bbni2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_5ovqo")
+"texture": ExtResource("4_sv3fi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_u8jb7")
+"texture": ExtResource("5_joge1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_ehyda")
+"texture": ExtResource("6_ly7cb")
 }],
 "loop": true,
 "name": &"walk",
@@ -41,7 +41,7 @@ script = ExtResource("1_iwlw1")
 sprite_frames = SubResource("SpriteFrames_j5jw8")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.82892
+frame_progress = 0.138242
 
 [node name="RayRight" type="RayCast2D" parent="."]
 target_position = Vector2(31, 0)

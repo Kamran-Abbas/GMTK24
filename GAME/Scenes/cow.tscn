@@ -1,38 +1,38 @@
 [gd_scene load_steps=9 format=3 uid="uid://c0xj3cgorm7oc"]
 
 [ext_resource type="Script" path="res://Scripts/cow.gd" id="1_2ifnm"]
-[ext_resource type="Texture2D" uid="uid://ch01erg38mvhw" path="res://Assets/cow_walk.png" id="1_xprkp"]
+[ext_resource type="Texture2D" uid="uid://ch01erg38mvhw" path="res://Assets/Animals/cow_walk.png" id="2_24dk8"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mhuxk"]
-atlas = ExtResource("1_xprkp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj21v"]
+atlas = ExtResource("2_24dk8")
 region = Rect2(0, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hextq"]
-atlas = ExtResource("1_xprkp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqk01"]
+atlas = ExtResource("2_24dk8")
 region = Rect2(128, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i8ae3"]
-atlas = ExtResource("1_xprkp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_lriuk"]
+atlas = ExtResource("2_24dk8")
 region = Rect2(256, 384, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3s8nm"]
-atlas = ExtResource("1_xprkp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sc4tu"]
+atlas = ExtResource("2_24dk8")
 region = Rect2(384, 384, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j5jw8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mhuxk")
+"texture": SubResource("AtlasTexture_sj21v")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hextq")
+"texture": SubResource("AtlasTexture_kqk01")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i8ae3")
+"texture": SubResource("AtlasTexture_lriuk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3s8nm")
+"texture": SubResource("AtlasTexture_sc4tu")
 }],
 "loop": true,
 "name": &"walk",
