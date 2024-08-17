@@ -1,11 +1,24 @@
-[gd_scene load_steps=23 format=3 uid="uid://xox7v3rell11"]
+[gd_scene load_steps=27 format=3 uid="uid://xox7v3rell11"]
 
 [ext_resource type="Texture2D" uid="uid://0j3ub74gg62k" path="res://Assets/Idle.png" id="1_80mf1"]
-[ext_resource type="Script" path="res://Scenes/player.gd" id="1_n840f"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_a3ogq"]
 [ext_resource type="Texture2D" uid="uid://2juc3a37qx65" path="res://Assets/Run.png" id="2_8jhp8"]
+[ext_resource type="Texture2D" uid="uid://c3welva7r7x54" path="res://Assets/Dead.png" id="2_a6sp8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73bqe"]
 size = Vector2(30, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stnk3"]
+atlas = ExtResource("2_a6sp8")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfolf"]
+atlas = ExtResource("2_a6sp8")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjl81"]
+atlas = ExtResource("2_a6sp8")
+region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4240i"]
 atlas = ExtResource("1_80mf1")
@@ -79,6 +92,20 @@ region = Rect2(896, 54, 128, 74)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_stnk3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfolf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjl81")
+}],
+"loop": true,
+"name": &"death",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_4240i")
 }, {
 "duration": 1.0,
@@ -146,9 +173,8 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 visibility_layer = 2
-collision_layer = 63
-collision_mask = 63
-script = ExtResource("1_n840f")
+collision_layer = 7
+script = ExtResource("1_a3ogq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-14, -13)
@@ -158,5 +184,6 @@ shape = SubResource("RectangleShape2D_73bqe")
 position = Vector2(-13, -14.75)
 scale = Vector2(0.625, 0.614865)
 sprite_frames = SubResource("SpriteFrames_10ba0")
-animation = &"idle"
+animation = &"death"
 autoplay = "idle"
+frame_progress = 0.696687

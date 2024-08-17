@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dclbdj6lt5cya"]
 
-[ext_resource type="Script" path="res://Scenes/pig.gd" id="1_7ecup"]
+[ext_resource type="Script" path="res://Scripts/pig.gd" id="1_idwft"]
 [ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/pig_walk.png" id="1_yjft0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yt4w7"]
@@ -43,7 +43,7 @@ animations = [{
 radius = 21.4709
 
 [node name="Pig" type="Node2D"]
-script = ExtResource("1_7ecup")
+script = ExtResource("1_idwft")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j5jw8")
@@ -58,8 +58,7 @@ target_position = Vector2(31, 0)
 target_position = Vector2(-27, 0)
 
 [node name="Area2D" type="Area2D" parent="."]
-collision_layer = 17
-collision_mask = 16
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_wir2i")
