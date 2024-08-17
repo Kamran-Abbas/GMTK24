@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwac7npbeduya"
-path="res://.godot/imported/sheep_walk.png-024be545ab9ad9a81068239b441268bd.ctex"
+uid="uid://0j3ub74gg62k"
+path="res://.godot/imported/Idle.png-fae85a9c977df4d8cf948d72e990e3a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheep_walk.png"
-dest_files=["res://.godot/imported/sheep_walk.png-024be545ab9ad9a81068239b441268bd.ctex"]
+source_file="res://Assets/Player/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-fae85a9c977df4d8cf948d72e990e3a3.ctex"]
 
 [params]
 

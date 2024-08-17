@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0j3ub74gg62k"
-path="res://.godot/imported/Idle.png-40bd0c3a4ed83cab2e27207410ff79e4.ctex"
+uid="uid://b5vpficdf07vq"
+path="res://.godot/imported/Bee_0000_Capa-1.png-11fccd4359efb9bbcccd2b2c0b6ba741.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-40bd0c3a4ed83cab2e27207410ff79e4.ctex"]
+source_file="res://Assets/Animals/Bee/Bee_0000_Capa-1.png"
+dest_files=["res://.godot/imported/Bee_0000_Capa-1.png-11fccd4359efb9bbcccd2b2c0b6ba741.ctex"]
 
 [params]
 

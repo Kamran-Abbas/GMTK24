@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl4p1xw6jb356"
-path="res://.godot/imported/Walk.png-44f58ac7d3e92e797c88cfc387183eaa.ctex"
+uid="uid://i1vpykxlislp"
+path="res://.godot/imported/pig_walk.png-f03369d2e262404b14554c7a29d9d41e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-44f58ac7d3e92e797c88cfc387183eaa.ctex"]
+source_file="res://Assets/Animals/pig_walk.png"
+dest_files=["res://.godot/imported/pig_walk.png-f03369d2e262404b14554c7a29d9d41e.ctex"]
 
 [params]
 

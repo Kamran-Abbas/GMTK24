@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crypucul6jxjk"
-path="res://.godot/imported/Jump.png-f373097a3a65e68854819e9ff55796d3.ctex"
+uid="uid://jo3mmiicilo2"
+path="res://.godot/imported/chicken_walk.webp-bd0ad48c8058ddd6b6863a727bae6c57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Jump.png"
-dest_files=["res://.godot/imported/Jump.png-f373097a3a65e68854819e9ff55796d3.ctex"]
+source_file="res://Assets/Animals/chicken_walk.webp"
+dest_files=["res://.godot/imported/chicken_walk.webp-bd0ad48c8058ddd6b6863a727bae6c57.ctex"]
 
 [params]
 

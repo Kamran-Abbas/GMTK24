@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmqnupyh3o5qd"
-path="res://.godot/imported/chicken_walk.png-94b6220ddbc10ce31947eb1f9fda4813.ctex"
+uid="uid://beteswr1r6hcm"
+path="res://.godot/imported/Bee_0004_Capa-5.png-bd8148c62f6fcaa597225f7bbc933d84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/chicken_walk.png"
-dest_files=["res://.godot/imported/chicken_walk.png-94b6220ddbc10ce31947eb1f9fda4813.ctex"]
+source_file="res://Assets/Animals/Bee/Bee_0004_Capa-5.png"
+dest_files=["res://.godot/imported/Bee_0004_Capa-5.png-bd8148c62f6fcaa597225f7bbc933d84.ctex"]
 
 [params]
 

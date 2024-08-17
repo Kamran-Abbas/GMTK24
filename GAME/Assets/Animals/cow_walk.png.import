@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5vpficdf07vq"
-path="res://.godot/imported/Bee_0000_Capa-1.png-d34a6b9c6e7e70d74e6fcba64c19cfad.ctex"
+uid="uid://ch01erg38mvhw"
+path="res://.godot/imported/cow_walk.png-8fdeb8ce2b90255755a314193ed19aca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bee/Bee_0000_Capa-1.png"
-dest_files=["res://.godot/imported/Bee_0000_Capa-1.png-d34a6b9c6e7e70d74e6fcba64c19cfad.ctex"]
+source_file="res://Assets/Animals/cow_walk.png"
+dest_files=["res://.godot/imported/cow_walk.png-8fdeb8ce2b90255755a314193ed19aca.ctex"]
 
 [params]
 

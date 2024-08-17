@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd0uh3xo37hx0"
-path="res://.godot/imported/Bee_0002_Capa-3.png-75386538719ac69d2778beb7904446ff.ctex"
+uid="uid://crypucul6jxjk"
+path="res://.godot/imported/Jump.png-edb40420cf7e38c053f8fde8d593900a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bee/Bee_0002_Capa-3.png"
-dest_files=["res://.godot/imported/Bee_0002_Capa-3.png-75386538719ac69d2778beb7904446ff.ctex"]
+source_file="res://Assets/Player/Jump.png"
+dest_files=["res://.godot/imported/Jump.png-edb40420cf7e38c053f8fde8d593900a.ctex"]
 
 [params]
 
