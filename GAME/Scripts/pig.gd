@@ -12,7 +12,7 @@ var withPlayer = false
 
 
 func _process(delta):
-	if !withPlayer and !AnimalCollection.endOfLevel:
+	if !withPlayer:
 		if rayright.is_colliding():
 			direction = -1
 			drct.flip_h = true

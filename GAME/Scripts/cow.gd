@@ -11,17 +11,25 @@ var direction = 1
 @onready var rayleft = $RayLeft
 
 func _process(delta):
-	if !withPlayer and !AnimalCollection.endOfLevel:
-		if rayright.is_colliding():
-			direction = -1
-			drct.flip_h = true
-		if rayleft.is_colliding():
+	if !AnimalCollection.endOfLevel:
+		if !withPlayer:
+			if rayright.is_colliding():
+				direction = -1
+				drct.flip_h = true
+			if rayleft.is_colliding():
+				direction = 1
+				drct.flip_h = false
+			position.x += direction *  60 * delta
+		else:
+			position = PlayerTracker.playerPos
+	else:
+		if collectionNumber == AnimalCollection.collectionNumber:
+			cow.scale.y = 1
+			cow.scale.x = 1
 			direction = 1
 			drct.flip_h = false
-		position.x += direction *  60 * delta
-	else:
-		position = PlayerTracker.playerPos
-	
+			AnimalCollection.animalsMoving = true
+			position.x += direction * 50 * delta
 	
 func _on_area_2d_body_entered(_body):
 	Counter.addCow()

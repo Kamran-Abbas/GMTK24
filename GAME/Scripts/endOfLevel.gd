@@ -1,6 +1,11 @@
 extends Node2D
+@onready var timer = $Timer
 
 
 func _on_area_2d_body_entered(body):
-	AnimalCollection.collectAnimal()
-	queue_free()
+	if !AnimalCollection.endOfLevel:
+		AnimalCollection.endOfLevel = true
+		AnimalCollection.collectAnimal()
+
+	
+
