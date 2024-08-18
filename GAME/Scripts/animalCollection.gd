@@ -4,7 +4,7 @@ var collectionNumber = 0
 var endOfLevel = false
 var animalsMoving = false
 
-func collectAnimal(animal):
+func collectAnimal():
 	pass
 
 func incrCollNum():
