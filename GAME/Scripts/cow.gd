@@ -1,5 +1,7 @@
 extends Node2D
 
+var cowCount = 0
+
 var direction = 1
 
 @onready var drct = $AnimatedSprite2D
@@ -17,4 +19,5 @@ func _process(delta):
 	position.x += direction *  60 * delta
 
 func _on_area_2d_body_entered(_body):
+	Counter.addCow()
 	queue_free()

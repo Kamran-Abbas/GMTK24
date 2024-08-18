@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c45phvmny4xyx"]
+
+[ext_resource type="Script" path="res://Scripts/LevelEnd.gd" id="1_3mkmb"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vv26e"]
+
+[node name="EndOfLevel" type="Area2D"]
+script = ExtResource("1_3mkmb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -250)
+scale = Vector2(1, 50)
+shape = SubResource("SegmentShape2D_vv26e")

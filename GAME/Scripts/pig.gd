@@ -18,4 +18,5 @@ func _process(delta):
 	position.x += direction *  60 * delta
 
 func _on_area_2d_body_entered(body):
+	Counter.addPig()
 	queue_free()
