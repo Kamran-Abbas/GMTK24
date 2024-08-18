@@ -11,3 +11,5 @@ script = ExtResource("1_3mkmb")
 position = Vector2(1, -250)
 scale = Vector2(1, 50)
 shape = SubResource("SegmentShape2D_vv26e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

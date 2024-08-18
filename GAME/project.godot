@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Counter="*res://Scripts/counter.gd"
 PlayerTracker="*res://Scripts/player_tracker.gd"
+AnimalCollection="*res://Scripts/animalCollection.gd"
 
 [input]
 

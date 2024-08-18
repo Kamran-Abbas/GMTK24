@@ -1,5 +1,7 @@
 extends Node
 
+
+
 var cowCount = 0
 var sheepCount = 0
 var pigCount = 0
@@ -16,3 +18,6 @@ func addPig():
 
 func addChicken():
 	chickenCount += 1
+	
+
+

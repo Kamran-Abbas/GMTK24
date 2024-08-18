@@ -1,5 +1,7 @@
 extends Node2D
 
+const weight = 2.5
+var collectionNumber
 var direction = 1
 var withPlayer = false
 
@@ -19,10 +21,18 @@ func _process(delta):
 		position.x += direction *  60 * delta
 	else:
 		position = PlayerTracker.playerPos
-
+	if !AnimalCollection.endOfLevel and (collectionNumber == AnimalCollection.collectionNumber):
+		sheep.scale.y = 1
+		sheep.scale.x = 1
+		direction = 1
+		drct.flip_h = false
+		position.x += direction * 60 * delta
+		
 func _on_area_2d_body_entered(_body):
 	Counter.addSheep()
 	sheep.scale.y = 0.01
 	sheep.scale.x = 0.01
 	withPlayer = true
+	collectionNumber = AnimalCollection.collectionNumber
+	AnimalCollection.incrCollNum()
 	get_node("PlayerArea2D").queue_free()

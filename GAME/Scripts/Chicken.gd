@@ -1,5 +1,7 @@
 extends Node2D
 
+const weight = 1
+var collectionNumber
 var direction = 1
 var withPlayer = false
 
@@ -12,7 +14,7 @@ var withPlayer = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _process(delta):
-	if !withPlayer:
+	if !withPlayer and !AnimalCollection.endOfLevel:
 		if rayright.is_colliding():
 			direction = -1
 			drct.flip_h = true
@@ -28,5 +30,7 @@ func _on_area_2d_body_entered(_body):
 	chicken.scale.x = 0.01
 	chicken.scale.y = 0.01
 	withPlayer = true
+	collectionNumber = AnimalCollection.collectionNumber
+	AnimalCollection.incrCollNum()
 	get_node("PlayerArea2D").queue_free()
 	
