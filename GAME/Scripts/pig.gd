@@ -15,7 +15,7 @@ func _process(delta):
 	if rayleft.is_colliding():
 		direction = 1
 		drct.flip_h = false
-	position.x += direction *  360 * delta
+	position.x += direction *  60 * delta
 
 func _on_area_2d_body_entered(body):
 	queue_free()

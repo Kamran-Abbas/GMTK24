@@ -199,4 +199,4 @@ scale = Vector2(0.625, 0.614865)
 sprite_frames = SubResource("SpriteFrames_10ba0")
 animation = &"death"
 autoplay = "idle"
-frame_progress = 0.696571
+frame_progress = 0.25481
