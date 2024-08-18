@@ -1,22 +1,29 @@
 extends Node2D
 
 var direction = 1
+var withPlayer = false
 
 @onready var drct = $AnimatedSprite2D
-
+@onready var pig = $"."
 @onready var rayright = $RayRight
 @onready var rayleft = $RayLeft
 
 
 func _process(delta):
-	if rayright.is_colliding():
-		direction = -1
-		drct.flip_h = true
-	if rayleft.is_colliding():
-		direction = 1
-		drct.flip_h = false
-	position.x += direction *  60 * delta
+	if !withPlayer:
+		if rayright.is_colliding():
+			direction = -1
+			drct.flip_h = true
+		if rayleft.is_colliding():
+			direction = 1
+			drct.flip_h = false
+		position.x += direction *  60 * delta
+	else:
+		position = PlayerTracker.playerPos
 
 func _on_area_2d_body_entered(body):
 	Counter.addPig()
-	queue_free()
+	pig.scale.y = 0.01
+	pig.scale.x = 0.01
+	withPlayer = true
+	get_node("PlayerArea2D").queue_free()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c45did1o8f6ui"]
+[gd_scene load_steps=19 format=3 uid="uid://c45did1o8f6ui"]
 
 [ext_resource type="PackedScene" uid="uid://xox7v3rell11" path="res://Scenes/player.tscn" id="1_h811e"]
 [ext_resource type="PackedScene" uid="uid://cb02fvt4rhiv" path="res://Scenes/platform.tscn" id="2_g4m52"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://clh5bh78r72r" path="res://Assets/Other/world_tileset.png" id="4_uc228"]
 [ext_resource type="PackedScene" uid="uid://ci6mfm445v0jl" path="res://Scenes/bee.tscn" id="7_bpn1i"]
 [ext_resource type="PackedScene" uid="uid://cfsicv56xb5h4" path="res://Scenes/killzone.tscn" id="8_qg622"]
+[ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -469,6 +470,40 @@ layer_0/tile_data = PackedInt32Array(262135, 65536, 1, 262136, 65536, 0, 262137,
 layer_1/name = "Background"
 layer_1/tile_data = PackedInt32Array()
 
+[node name="Animals" type="Node" parent="."]
+
+[node name="Chicken" type="Node" parent="Animals"]
+
+[node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
+position = Vector2(108, -89)
+
+[node name="Pig" type="Node" parent="Animals"]
+
+[node name="Pig" parent="Animals/Pig" instance=ExtResource("3_x378s")]
+position = Vector2(475, -167)
+
+[node name="Cow" type="Node" parent="Animals"]
+
+[node name="Cow" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
+position = Vector2(89, 32)
+
+[node name="Cow2" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
+position = Vector2(130, 33)
+
+[node name="Sheep" type="Node" parent="Animals"]
+
+[node name="Sheep" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
+position = Vector2(354, -125)
+
+[node name="Bee" type="Node" parent="Animals"]
+
+[node name="Bee" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(402, 39)
+
+[node name="BarnHouse" parent="." instance=ExtResource("11_p0vct")]
+z_index = 1
+position = Vector2(2262, -49)
+
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("2_g4m52")]
@@ -495,36 +530,6 @@ position = Vector2(-13, -6)
 zoom = Vector2(1.5, 1.5)
 limit_left = -85
 limit_bottom = 160
-
-[node name="Animals" type="Node" parent="."]
-
-[node name="Chicken" type="Node" parent="Animals"]
-
-[node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
-position = Vector2(268, -134)
-
-[node name="Pig" type="Node" parent="Animals"]
-
-[node name="Pig" parent="Animals/Pig" instance=ExtResource("3_x378s")]
-position = Vector2(475, -167)
-
-[node name="Cow" type="Node" parent="Animals"]
-
-[node name="Cow" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
-position = Vector2(89, 32)
-
-[node name="Cow2" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
-position = Vector2(130, 33)
-
-[node name="Sheep" type="Node" parent="Animals"]
-
-[node name="Sheep" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
-position = Vector2(354, -125)
-
-[node name="Bee" type="Node" parent="Animals"]
-
-[node name="Bee" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
-position = Vector2(402, 39)
 
 [node name="WorldBorders" type="Node" parent="."]
 

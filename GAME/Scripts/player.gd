@@ -11,10 +11,15 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player_dead = false
 
 func _process(body):
+	
+	PlayerTracker.playerPos.y = position.y
+	PlayerTracker.playerPos.x = position.x + 50
+	
 	if Engine.time_scale == 0.5:
 		player_dead = true
 		animated_sprite_2d.play("death")
 		velocity.x = 0
+		
 		#pass
 
 func _physics_process(delta):

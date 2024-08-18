@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d52uysix7ia0"]
+
+[ext_resource type="Script" path="res://Scripts/BarnHouse.gd" id="1_swg1s"]
+[ext_resource type="Texture2D" uid="uid://do75la8y7pgmj" path="res://Assets/Other/pixel-art-illustration-barn-pixelated-barn-barn-building-farm-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector-removebg-preview.png" id="2_aaj84"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3p7e7"]
+size = Vector2(141.552, 179.552)
+
+[node name="BarnHouse" type="Node2D"]
+scale = Vector2(0.288845, 0.288845)
+script = ExtResource("1_swg1s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_aaj84")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(15.7758, 3.22424)
+shape = SubResource("RectangleShape2D_3p7e7")
+
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
