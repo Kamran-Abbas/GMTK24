@@ -2,8 +2,8 @@ extends Node2D
 
 var direction = -1
 
-@onready var drct = $AnimatedSprite2D
 
+@onready var drct = $AnimatedSprite2D
 @onready var rayright = $RayRight
 @onready var rayleft = $RayLeft
 

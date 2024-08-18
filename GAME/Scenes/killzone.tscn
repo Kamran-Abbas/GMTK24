@@ -6,7 +6,7 @@
 collision_mask = 2
 script = ExtResource("1_uaaca")
 
-[node name="RestartTimer" type="Timer" parent="." groups=["death"]]
+[node name="RestartTimer" type="Timer" parent="."]
 wait_time = 1.7
 one_shot = true
 

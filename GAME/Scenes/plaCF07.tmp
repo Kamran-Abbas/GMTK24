@@ -99,22 +99,10 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ehkeu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehkeu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehkeu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehkeu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ehkeu")
 }],
 "loop": true,
 "name": &"death",
-"speed": 2.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -199,4 +187,4 @@ scale = Vector2(0.625, 0.614865)
 sprite_frames = SubResource("SpriteFrames_10ba0")
 animation = &"death"
 autoplay = "idle"
-frame_progress = 0.696571
+frame_progress = 0.6998
