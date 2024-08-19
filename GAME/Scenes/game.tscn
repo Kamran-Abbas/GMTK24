@@ -551,7 +551,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Player" parent="." instance=ExtResource("1_h811e")]
-position = Vector2(1288, -19)
+position = Vector2(-111, -22)
 collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -573,7 +573,7 @@ shape = SubResource("WorldBoundaryShape2D_lr7bf")
 position = Vector2(58, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/WorldBorderLeft"]
-position = Vector2(-173, -13)
+position = Vector2(-145, -14)
 shape = SubResource("WorldBoundaryShape2D_vq3wm")
 
 [node name="Signs" type="Node" parent="."]
