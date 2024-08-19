@@ -1,9 +1,11 @@
 extends Node2D
 
-const weight = 10
+const SCALE = 0.7
 var collectionNumber
+var currentCollNumber
 var withPlayer = false
 var direction = 1
+var startedMoving = false
 
 @onready var drct = $AnimatedSprite2D
 @onready var cow = $"."
@@ -11,6 +13,7 @@ var direction = 1
 @onready var rayleft = $RayLeft
 
 func _process(delta):
+	currentCollNumber = AnimalCollection.collectionNumber
 	if !AnimalCollection.endOfLevel:
 		if !withPlayer:
 			if rayright.is_colliding():
@@ -23,12 +26,14 @@ func _process(delta):
 		else:
 			position = PlayerTracker.playerPos
 	else:
-		if collectionNumber == AnimalCollection.collectionNumber:
-			cow.scale.y = 1
-			cow.scale.x = 1
+		if (collectionNumber == currentCollNumber) or (startedMoving):
+			startedMoving = true
+			cow.scale.y = SCALE
+			cow.scale.x = SCALE
 			direction = 1
 			drct.flip_h = false
 			AnimalCollection.animalsMoving = true
+			position.y = PlayerTracker.playerPos.y - 10
 			position.x += direction * 50 * delta
 	
 func _on_area_2d_body_entered(_body):

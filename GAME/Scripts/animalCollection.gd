@@ -1,18 +1,20 @@
 extends Node
 
-var collectionNumber = 1
+var collectionNumber = 0
 var lastCollection
 var endOfLevel = false
 var animalsMoving = false
+var timerEnded = false
+var startTimer = false
 
 func collectAnimal():
 	endOfLevel = true
-	lastCollection = collectionNumber - 1
+	lastCollection = collectionNumber
 	for i in lastCollection:
 		collectionNumber = i
-		for j in 100:
-			if j == 100:
-				pass
+		print(collectionNumber)
+		await get_tree().create_timer(0.4).timeout
+			
 	
 
 func incrCollNum():

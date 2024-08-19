@@ -1,9 +1,12 @@
 extends Node2D
 
-const weight = 1
+
+const SCALE = 0.7
 var collectionNumber
 var direction = 1
 var withPlayer = false
+var currentCollNumber
+var startedMoving = false
 
 @onready var drct = $AnimatedSprite2D
 @onready var chicken = $"."
@@ -14,16 +17,29 @@ var withPlayer = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _process(delta):
-	if !withPlayer:
-		if rayright.is_colliding():
-			direction = -1
-			drct.flip_h = true
-		if rayleft.is_colliding():
-			direction = 1
-			drct.flip_h = false
-		position.x += direction *  60 * delta
+	currentCollNumber = AnimalCollection.collectionNumber
+	if !AnimalCollection.endOfLevel:
+		if !withPlayer:
+			if rayright.is_colliding():
+				direction = -1
+				drct.flip_h = true
+			if rayleft.is_colliding():
+				direction = 1
+				drct.flip_h = false
+			position.x += direction *  60 * delta
+		else:
+			position = PlayerTracker.playerPos
 	else:
-		position = PlayerTracker.playerPos
+			if (collectionNumber == currentCollNumber) or (startedMoving):
+				startedMoving = true
+				chicken.scale.y = SCALE
+				chicken.scale.x = SCALE
+				direction = 1
+				drct.flip_h = false
+				AnimalCollection.animalsMoving = true
+				position.x += direction * 50 * delta
+
+
 
 func _on_area_2d_body_entered(_body):
 	Counter.addChicken()

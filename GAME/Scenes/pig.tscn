@@ -71,5 +71,8 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BarnArea2D"]
 shape = SubResource("CircleShape2D_wir2i")
 
+[node name="Weight" type="Node2D" parent="."]
+metadata/Weight = 5.0
+
 [connection signal="body_entered" from="PlayerArea2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="BarnArea2D" to="." method="_on_area_2d_body_entered"]

@@ -475,25 +475,25 @@ layer_1/tile_data = PackedInt32Array()
 [node name="Chicken" type="Node" parent="Animals"]
 
 [node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
-position = Vector2(108, -89)
+position = Vector2(1396, -23)
 
 [node name="Pig" type="Node" parent="Animals"]
 
 [node name="Pig" parent="Animals/Pig" instance=ExtResource("3_x378s")]
-position = Vector2(475, -167)
+position = Vector2(1377, -16)
 
 [node name="Cow" type="Node" parent="Animals"]
 
 [node name="Cow" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
-position = Vector2(1476, -20)
+position = Vector2(1406, -17)
 
 [node name="Cow2" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
-position = Vector2(1439, -22)
+position = Vector2(1410, -31)
 
 [node name="Sheep" type="Node" parent="Animals"]
 
 [node name="Sheep" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
-position = Vector2(812, 68)
+position = Vector2(1386, -21)
 
 [node name="Bee" type="Node" parent="Animals"]
 
@@ -522,7 +522,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Player" parent="." instance=ExtResource("1_h811e")]
-position = Vector2(1319, -18)
+position = Vector2(1270, -24)
 collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
