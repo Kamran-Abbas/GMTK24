@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://2cbc3ji21vjk"]
+[gd_scene load_steps=4 format=3 uid="uid://3pswmdqsul6l"]
 
 [ext_resource type="Script" path="res://Scripts/mainMenu.gd" id="1_kplho"]
+[ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="2_qj04k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3lwpx"]
 bg_color = Color(1, 1, 1, 1)
@@ -56,7 +57,10 @@ offset_top = -50.0
 offset_right = 157.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_qj04k")
 theme_override_font_sizes/font_size = 45
-text = "A Deathrise Game"
+text = "BY
+KAJS STUDIOS"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
