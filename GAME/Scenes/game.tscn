@@ -515,7 +515,7 @@ position = Vector2(-659.003, 56)
 scale = Vector2(0.593464, 0.593464)
 
 [node name="Chicken2" parent="Animals/Chicken/Chicken2" instance=ExtResource("2_sytwa")]
-position = Vector2(-2370.82, -55.6057)
+position = Vector2(-2583.13, -26.9604)
 scale = Vector2(1.08138, 1.08138)
 
 [node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
@@ -579,6 +579,10 @@ scale = Vector2(0.443405, 0.433057)
 [node name="Bee5" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
 position = Vector2(-1882, 136)
 scale = Vector2(0.484107, 0.461775)
+
+[node name="Bee6" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(-1993, 20)
+scale = Vector2(0.666455, 0.606386)
 
 [node name="Platforms" type="Node" parent="."]
 

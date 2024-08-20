@@ -18,4 +18,4 @@ func _on_death_anim_timer_timeout():
 
 func _on_restart_timer_timeout():
 	Engine.time_scale = 1.0
-	get_tree().change_scene_to_file("res://Scenes/intro.tscn")
+	get_tree().change_scene_to_file("res://Scenes/lose.tscn")
