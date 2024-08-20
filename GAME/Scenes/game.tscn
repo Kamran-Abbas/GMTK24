@@ -510,12 +510,12 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Chicken" type="Node" parent="Animals"]
 
+[node name="Chicken2" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
+position = Vector2(-659.003, 56)
+scale = Vector2(0.593464, 0.593464)
+
 [node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
 position = Vector2(177, 58)
-
-[node name="Chicken" parent="Animals/Chicken/Chicken" instance=ExtResource("2_sytwa")]
-position = Vector2(-1258.48, -3.01072)
-scale = Vector2(0.893373, 0.893373)
 
 [node name="Pig" type="Node" parent="Animals"]
 
