@@ -65,7 +65,6 @@ collision_mask = 2
 shape = SubResource("CircleShape2D_wir2i")
 
 [node name="BarnArea2D" type="Area2D" parent="."]
-scale = Vector2(1, 1)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BarnArea2D"]

@@ -68,7 +68,6 @@ shape = SubResource("CircleShape2D_qa0qc")
 
 [node name="BarnArea2D" type="Area2D" parent="."]
 position = Vector2(-2, 6)
-scale = Vector2(1, 1)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BarnArea2D"]
