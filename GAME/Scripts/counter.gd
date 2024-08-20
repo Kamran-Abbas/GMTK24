@@ -1,6 +1,7 @@
 extends Node
 
 var win = false
+var currentWeight = 0
 
 var cowCount = 0
 var sheepCount = 0

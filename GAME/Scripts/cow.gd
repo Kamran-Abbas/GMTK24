@@ -1,5 +1,6 @@
 extends Node2D
 
+var WEIGHT
 const SCALE = 0.7
 var collectionNumber
 var currentCollNumber
@@ -7,10 +8,14 @@ var withPlayer = false
 var direction = 1
 var startedMoving = false
 
+
 @onready var drct = $AnimatedSprite2D
 @onready var cow = $"."
 @onready var rayright = $RayRight
 @onready var rayleft = $RayLeft
+
+func _ready():
+	WEIGHT = get_node("Weight").get_meta("Weight")
 
 func _process(delta):
 	currentCollNumber = AnimalCollection.collectionNumber
@@ -43,4 +48,5 @@ func _on_area_2d_body_entered(_body):
 	withPlayer = true
 	collectionNumber = AnimalCollection.collectionNumber
 	AnimalCollection.incrCollNum()
+	Counter.currentWeight += WEIGHT
 	get_node("PlayerArea2D").queue_free()
