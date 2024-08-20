@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://2juc3a37qx65" path="res://Assets/Player/Run.png" id="3_ijqsu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73bqe"]
-size = Vector2(30, 42)
+size = Vector2(21.3295, 37.6402)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqcrd"]
 atlas = ExtResource("2_s1jt7")
@@ -190,7 +190,7 @@ collision_layer = 6
 script = ExtResource("1_a3ogq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-14, -13)
+position = Vector2(-13.1741, -11.2921)
 shape = SubResource("RectangleShape2D_73bqe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
