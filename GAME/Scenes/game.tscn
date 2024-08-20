@@ -551,6 +551,10 @@ position = Vector2(804, 83)
 position = Vector2(-1170, 232)
 scale = Vector2(0.482898, 0.482898)
 
+[node name="Sheep3" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
+position = Vector2(-1761, 279)
+scale = Vector2(0.446407, 0.446407)
+
 [node name="Bee" type="Node" parent="Animals"]
 
 [node name="Bee" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
