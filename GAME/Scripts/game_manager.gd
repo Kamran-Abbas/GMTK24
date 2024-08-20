@@ -1,6 +1,7 @@
 extends Node
 
 
+@onready var label_3 = $Label3
 @onready var label_2 = $Label2
 @onready var label = $Label
 
@@ -70,6 +71,7 @@ func _ready():
 func add_mass(weight):
 	scaleMass += weight
 	label.text = str(scaleMass) + " KG"
+	
 
 func winOrLose(mass, targetMass, upperBound, lowerBound):
 	lowerBound = targetWeight - 2.5
