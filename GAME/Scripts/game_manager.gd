@@ -23,3 +23,4 @@ func winOrLose(mass, targetMass, upperBound, lowerBound):
 	upperBound = targetWeight + 2.5 
 	if ((lowerBound < mass) and (upperBound > mass)):
 		Counter.win = true
+		get_tree().change_scene_to_file("res://Scenes/win.tscn")
