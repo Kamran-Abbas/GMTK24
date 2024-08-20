@@ -534,6 +534,10 @@ scale = Vector2(0.456004, 0.456004)
 position = Vector2(-1170, 7)
 scale = Vector2(0.334281, 0.334281)
 
+[node name="Pig4" parent="Animals/Pig" instance=ExtResource("3_x378s")]
+position = Vector2(-489, 22)
+scale = Vector2(0.481985, 0.481985)
+
 [node name="Cow" type="Node" parent="Animals"]
 
 [node name="Cow3" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
@@ -727,6 +731,13 @@ shape = SubResource("RectangleShape2D_pjuo0")
 position = Vector2(-2438, 23)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D10"]
+position = Vector2(613, -93)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D11" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(-1120, 104)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D11"]
 position = Vector2(613, -93)
 shape = SubResource("RectangleShape2D_pjuo0")
 
