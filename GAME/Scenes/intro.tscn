@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://2cbc3ji21vjk"]
 
 [ext_resource type="Script" path="res://Scripts/mainMenu.gd" id="1_kplho"]
+[ext_resource type="Texture2D" uid="uid://dn6nm627y358d" path="res://Assets/Other/Screenshot 2024-08-20 134613.png" id="2_8vnqb"]
 [ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_drnj7"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="2_qj04k"]
-[ext_resource type="Texture2D" uid="uid://cueqqln5s2w73" path="res://Assets/Other/shrek.jpg" id="2_w2ec2"]
 [ext_resource type="Texture2D" uid="uid://clh5bh78r72r" path="res://Assets/Other/world_tileset.png" id="3_h6o1p"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xgk5s"]
-texture = ExtResource("2_w2ec2")
+texture = ExtResource("2_8vnqb")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3lwpx"]
 bg_color = Color(1, 1, 1, 1)
@@ -416,9 +416,12 @@ grow_vertical = 2
 script = ExtResource("1_kplho")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 1153.0
-offset_bottom = 648.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_xgk5s")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -458,6 +461,7 @@ offset_top = -50.0
 offset_right = 157.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_qj04k")
 theme_override_font_sizes/font_size = 45
 text = "BY
