@@ -8,10 +8,10 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
-var player_dead = false
+var player_dead
 
 func _process(body):
-	
+	player_dead = Counter.player_dead
 	PlayerTracker.playerPos.y = position.y
 	PlayerTracker.playerPos.x = position.x + 50
 	
