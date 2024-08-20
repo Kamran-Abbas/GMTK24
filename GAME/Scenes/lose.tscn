@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://Scripts/win.gd" id="1_lymc7"]
 [ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_o151a"]
-[ext_resource type="Texture2D" uid="uid://cueqqln5s2w73" path="res://Assets/Other/shrek.jpg" id="2_qx16b"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_8rxhw"]
+[ext_resource type="Texture2D" uid="uid://bt184iq665jsr" path="res://Assets/Player/Dead.png" id="4_y37qe"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bywim"]
-texture = ExtResource("2_qx16b")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6eda"]
+bg_color = Color(0.0687983, 0.0687983, 0.0687982, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hqeq"]
 bg_color = Color(1, 1, 1, 1)
@@ -33,7 +33,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_bywim")
+theme_override_styles/panel = SubResource("StyleBoxFlat_v6eda")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -70,10 +70,23 @@ offset_top = 110.0
 offset_right = 141.0
 offset_bottom = 212.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_8rxhw")
 theme_override_font_sizes/font_size = 74
 text = "You Lose
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(192, 494)
+scale = Vector2(3.66456, 3.58333)
+texture = ExtResource("4_y37qe")
+region_enabled = true
+region_rect = Rect2(305, 80, 79, 48)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(977, 486)
+scale = Vector2(-3.63802, 3.71181)
+texture = ExtResource("4_y37qe")
+region_enabled = true
+region_rect = Rect2(305, 80, 79, 48)
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
