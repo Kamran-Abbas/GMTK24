@@ -498,10 +498,10 @@ autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="GameManager"]
-offset_left = -1433.0
-offset_top = -113.0
-offset_right = -1275.0
-offset_bottom = -90.0
+offset_left = -299.0
+offset_top = -90.0
+offset_right = -141.0
+offset_bottom = -67.0
 text = "You have x KG so far"
 
 [node name="TileMap" type="TileMap" parent="."]
