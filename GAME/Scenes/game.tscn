@@ -528,12 +528,12 @@ scale = Vector2(0.456004, 0.456004)
 
 [node name="Cow" type="Node" parent="Animals"]
 
+[node name="Cow3" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
+position = Vector2(-1297, 183)
+scale = Vector2(0.380915, 0.380915)
+
 [node name="Cow" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
 position = Vector2(579, -14)
-
-[node name="Cow" parent="Animals/Cow/Cow" instance=ExtResource("4_tuup5")]
-position = Vector2(-3682.26, 386.676)
-scale = Vector2(0.747669, 0.747669)
 
 [node name="Cow2" parent="Animals/Cow" instance=ExtResource("4_tuup5")]
 position = Vector2(806, -76)
