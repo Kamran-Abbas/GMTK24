@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c45did1o8f6ui"]
+[gd_scene load_steps=22 format=3 uid="uid://c45did1o8f6ui"]
 
 [ext_resource type="PackedScene" uid="uid://xox7v3rell11" path="res://Scenes/player.tscn" id="1_h811e"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_ueq5r"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cnatx62cw04gv" path="res://Scenes/endOfLevel.tscn" id="11_hbupt"]
 [ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="13_xt3jm"]
+[ext_resource type="PackedScene" uid="uid://cgsmxlyirs8as" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -481,9 +482,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="GameManager"]
-offset_left = -81.0
+offset_left = -1.0
 offset_top = -88.0
-offset_right = 30.0
+offset_right = 110.0
 offset_bottom = -65.0
 theme_override_fonts/font = ExtResource("13_xt3jm")
 theme_override_font_sizes/font_size = 8
@@ -493,7 +494,7 @@ autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(5, 4)
+position = Vector2(86, 16)
 tile_set = SubResource("TileSet_5pkq2")
 format = 2
 layer_0/name = "Main"
@@ -553,7 +554,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Player" parent="." instance=ExtResource("1_h811e")]
-position = Vector2(-111, -22)
+position = Vector2(-38, -11)
 collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -578,3 +579,7 @@ position = Vector2(-1812, 62)
 shape = SubResource("WorldBoundaryShape2D_vq3wm")
 
 [node name="Signs" type="Node" parent="."]
+
+[node name="Index Sign" parent="." instance=ExtResource("14_ikenp")]
+position = Vector2(-21, -125)
+scale = Vector2(0.357497, 0.357497)

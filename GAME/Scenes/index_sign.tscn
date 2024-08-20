@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgsmxlyirs8as"]
+
+[ext_resource type="Texture2D" uid="uid://ch01erg38mvhw" path="res://Assets/Animals/cow_walk.png" id="2_08thm"]
+[ext_resource type="Texture2D" uid="uid://i1vpykxlislp" path="res://Assets/Animals/pig_walk.png" id="3_hr2yn"]
+[ext_resource type="Texture2D" uid="uid://bwac7npbeduya" path="res://Assets/Animals/sheep_walk.png" id="4_je5tj"]
+[ext_resource type="Texture2D" uid="uid://cmqnupyh3o5qd" path="res://Assets/Animals/chicken_walk.png" id="5_mja1i"]
+[ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="6_45174"]
+
+[node name="Index Sign" type="Node2D"]
+
+[node name="Cow" type="Sprite2D" parent="."]
+position = Vector2(-59, -131)
+texture = ExtResource("2_08thm")
+region_enabled = true
+region_rect = Rect2(28, 425, 91, 56)
+
+[node name="Pig" type="Sprite2D" parent="."]
+position = Vector2(-60, -79)
+texture = ExtResource("3_hr2yn")
+region_enabled = true
+region_rect = Rect2(27, 421, 78, 61)
+
+[node name="Sheep" type="Sprite2D" parent="."]
+position = Vector2(-56, -32)
+texture = ExtResource("4_je5tj")
+region_enabled = true
+region_rect = Rect2(33, 416, 72, 59)
+
+[node name="Chicken" type="Sprite2D" parent="."]
+position = Vector2(-57, 7)
+texture = ExtResource("5_mja1i")
+region_enabled = true
+region_rect = Rect2(0, 96, 32, 32)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -22.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("6_45174")
+theme_override_font_sizes/font_size = 41
+text = "- 10KG
+- 5KG
+- 2.5KG
+- 1KG"
