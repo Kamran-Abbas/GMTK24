@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://jgvrp88dge2w"]
+[gd_scene load_steps=5 format=3 uid="uid://b8o052ob37elc"]
 
-[ext_resource type="Script" path="res://Scenes/win.gd" id="1_6nc3w"]
-[ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_els4o"]
-[ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_dwx7b"]
+[ext_resource type="Script" path="res://Scripts/win.gd" id="1_lymc7"]
+[ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_o151a"]
+[ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_8rxhw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hqeq"]
 bg_color = Color(1, 1, 1, 1)
@@ -13,14 +13,14 @@ corner_radius_bottom_left = 20
 shadow_color = Color(0, 0, 0, 0.647059)
 shadow_size = 5
 
-[node name="win" type="Control"]
+[node name="lose" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6nc3w")
+script = ExtResource("1_lymc7")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -40,8 +40,8 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_els4o")
-theme_override_font_sizes/font_size = 36
+theme_override_fonts/font = ExtResource("2_o151a")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_5hqeq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5hqeq")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5hqeq")
@@ -53,12 +53,13 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -152.0
-offset_top = 109.0
+offset_top = 110.0
 offset_right = 141.0
-offset_bottom = 211.0
+offset_bottom = 212.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("3_dwx7b")
+theme_override_fonts/font = ExtResource("3_8rxhw")
 theme_override_font_sizes/font_size = 74
-text = "You Win"
+text = "You Lose
+"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
