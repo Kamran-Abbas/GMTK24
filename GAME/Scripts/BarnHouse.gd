@@ -16,5 +16,5 @@ func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shap
 	animal.free()
 	totalAnimals -= 1
 	Counter.totalAnimals -= 1
-	if Counter.totalAnimals == 1:
+	if Counter.totalAnimals == 0:
 		game_manager.winOrLose(game_manager.scaleMass, game_manager.targetWeight, game_manager.HigherTMass, game_manager.LowerTMass)
