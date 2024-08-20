@@ -29,11 +29,11 @@ func _ready():
 				sheep += 1
 	
 	var total = pig + chicken + cow + sheep
-	var ranNum = randi_range(1, total)
+	var ranNum = randi_range(1, total+1)
 	
 	var i = 0
 	while i < ranNum:
-		var j = randi_range(1, 4)
+		var j = randi_range(1, 5)
 		if j == 1:
 			if chicken <= 0:
 				pass
