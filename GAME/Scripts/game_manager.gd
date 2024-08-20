@@ -73,7 +73,7 @@ func add_mass(weight):
 
 func _process(delta):
 	var weight = Counter.currentWeight
-	label_3.text = "You currently have" + str(weight) + "KG"
+	label_3.text = "You currently have " + str(weight) + " KG"
  
 
 func winOrLose(mass, targetMass, upperBound, lowerBound):
