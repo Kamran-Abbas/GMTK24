@@ -415,6 +415,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kplho")
 
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -219.5
+offset_top = -95.0
+offset_right = 221.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_qj04k")
+theme_override_font_sizes/font_size = 45
+text = "BY
+KAJS STUDIOS"
+horizontal_alignment = 1
+
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -452,16 +471,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -220.0
-offset_top = -95.0
-offset_right = 221.0
+offset_left = 203.0
+offset_top = -626.0
+offset_right = 644.0
+offset_bottom = -531.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_qj04k")
 theme_override_font_sizes/font_size = 45
-text = "BY
-KAJS STUDIOS"
+text = "Mass 
+Matcher"
 horizontal_alignment = 1
 
 [node name="TileMap" type="TileMap" parent="."]
