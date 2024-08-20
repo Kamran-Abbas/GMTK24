@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dsst5vyod5dfg"]
+[gd_scene load_steps=7 format=3 uid="uid://b8o052ob37elc"]
 
 [ext_resource type="Script" path="res://Scripts/win.gd" id="1_lymc7"]
 [ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_o151a"]
