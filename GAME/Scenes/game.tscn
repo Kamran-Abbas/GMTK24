@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cnatx62cw04gv" path="res://Scenes/endOfLevel.tscn" id="11_hbupt"]
 [ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="13_xt3jm"]
-[ext_resource type="PackedScene" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
+[ext_resource type="PackedScene" uid="uid://cgsmxlyirs8as" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
 [ext_resource type="AudioStream" uid="uid://dv8v2v2667db0" path="res://Assets/Other/time_for_adventure.mp3" id="15_0rvn3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
@@ -644,25 +644,25 @@ shape = SubResource("RectangleShape2D_pjuo0")
 position = Vector2(-1040, 152)
 shape = SubResource("RectangleShape2D_pjuo0")
 
-[node name="Area2D9" type="Area2D" parent="WorldBorders/AnimalBorders"]
-position = Vector2(-996, 66)
+[node name="WorldBorders_AnimalBorders#Area2D9" type="Area2D" parent="WorldBorders"]
+position = Vector2(-938, 67)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D9"]
-position = Vector2(613, -89)
+[node name="WorldBorders_AnimalBorders_Area2D9#CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/WorldBorders_AnimalBorders#Area2D9"]
+position = Vector2(899, -87)
 shape = SubResource("RectangleShape2D_pjuo0")
 
-[node name="Area2D10" type="Area2D" parent="WorldBorders/AnimalBorders"]
-position = Vector2(-650, 70)
+[node name="WorldBorders_AnimalBorders#Area2D10" type="Area2D" parent="WorldBorders"]
+position = Vector2(-592, 71)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D10"]
-position = Vector2(613, -93)
+[node name="WorldBorders_AnimalBorders_Area2D10#CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/WorldBorders_AnimalBorders#Area2D10"]
+position = Vector2(210, -93)
 shape = SubResource("RectangleShape2D_pjuo0")
 
-[node name="Area2D11" type="Area2D" parent="WorldBorders/AnimalBorders"]
-position = Vector2(-1819, 54)
+[node name="WorldBorders_AnimalBorders#Area2D11" type="Area2D" parent="WorldBorders"]
+position = Vector2(-1761, 55)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D11"]
-position = Vector2(613, -93)
+[node name="WorldBorders_AnimalBorders_Area2D11#CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/WorldBorders_AnimalBorders#Area2D11"]
+position = Vector2(313, -75)
 shape = SubResource("RectangleShape2D_pjuo0")
 
 [node name="Signs" type="Node" parent="."]
