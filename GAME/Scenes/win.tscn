@@ -1,12 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://jgvrp88dge2w"]
+[gd_scene load_steps=8 format=3 uid="uid://jgvrp88dge2w"]
 
 [ext_resource type="Script" path="res://Scripts/win.gd" id="1_6nc3w"]
 [ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_els4o"]
-[ext_resource type="Texture2D" uid="uid://cueqqln5s2w73" path="res://Assets/Other/shrek.jpg" id="2_ma6sl"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_dwx7b"]
+[ext_resource type="Texture2D" uid="uid://cmqnupyh3o5qd" path="res://Assets/Animals/chicken_walk.png" id="4_jtfrj"]
+[ext_resource type="Texture2D" uid="uid://bwac7npbeduya" path="res://Assets/Animals/sheep_walk.png" id="5_dj7cu"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t4qtc"]
-texture = ExtResource("2_ma6sl")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycvt4"]
+bg_color = Color(0.706354, 0.590905, 0.134114, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hqeq"]
 bg_color = Color(1, 1, 1, 1)
@@ -33,7 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_t4qtc")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ycvt4")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -70,9 +71,36 @@ offset_top = 109.0
 offset_right = 141.0
 offset_bottom = 211.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_dwx7b")
 theme_override_font_sizes/font_size = 74
 text = "You Win"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(151, 147)
+scale = Vector2(7.52444, 7.52444)
+texture = ExtResource("4_jtfrj")
+region_enabled = true
+region_rect = Rect2(66, 65, 27, 32)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(112.301, 0.664499)
+scale = Vector2(1.08552, 1.08552)
+texture = ExtResource("4_jtfrj")
+region_enabled = true
+region_rect = Rect2(66, 65, 27, 32)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(146, 498)
+scale = Vector2(6.04001, 6.04001)
+texture = ExtResource("5_dj7cu")
+region_enabled = true
+region_rect = Rect2(170, 300, 42, 47)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(141.059, 0.331114)
+scale = Vector2(0.993577, 0.993577)
+texture = ExtResource("5_dj7cu")
+region_enabled = true
+region_rect = Rect2(170, 300, 42, 47)
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
