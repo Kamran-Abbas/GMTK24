@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c45did1o8f6ui"]
+[gd_scene load_steps=24 format=3 uid="uid://c45did1o8f6ui"]
 
 [ext_resource type="PackedScene" uid="uid://xox7v3rell11" path="res://Scenes/player.tscn" id="1_h811e"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_ueq5r"]
@@ -13,7 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://cnatx62cw04gv" path="res://Scenes/endOfLevel.tscn" id="11_hbupt"]
 [ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="13_xt3jm"]
-[ext_resource type="PackedScene" uid="uid://cgsmxlyirs8as" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
+[ext_resource type="PackedScene" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
+[ext_resource type="AudioStream" uid="uid://dv8v2v2667db0" path="res://Assets/Other/time_for_adventure.mp3" id="15_0rvn3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
 texture = ExtResource("4_uc228")
@@ -625,3 +626,7 @@ collision_mask = 3
 zoom = Vector2(1.5, 1.5)
 limit_left = -2330
 limit_bottom = 285
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_0rvn3")
+autoplay = true
