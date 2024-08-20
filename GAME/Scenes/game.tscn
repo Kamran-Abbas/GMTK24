@@ -497,6 +497,13 @@ horizontal_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
+[node name="Label3" type="Label" parent="GameManager"]
+offset_left = -1433.0
+offset_top = -113.0
+offset_right = -1275.0
+offset_bottom = -90.0
+text = "You have x KG so far"
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-5, 14)
 tile_set = SubResource("TileSet_5pkq2")
