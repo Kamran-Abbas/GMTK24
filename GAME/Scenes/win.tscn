@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://jgvrp88dge2w"]
 
-[ext_resource type="Script" path="res://Scenes/win.gd" id="1_6nc3w"]
+[ext_resource type="Script" path="res://Scripts/win.gd" id="1_6nc3w"]
 [ext_resource type="FontFile" uid="uid://d25qgcsooupid" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_els4o"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_dwx7b"]
 
