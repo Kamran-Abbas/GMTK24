@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cnatx62cw04gv" path="res://Scenes/endOfLevel.tscn" id="11_hbupt"]
 [ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="13_xt3jm"]
-[ext_resource type="PackedScene" uid="uid://cgsmxlyirs8as" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
+[ext_resource type="PackedScene" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
 [ext_resource type="AudioStream" uid="uid://dv8v2v2667db0" path="res://Assets/Other/time_for_adventure.mp3" id="15_0rvn3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
