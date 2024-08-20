@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bsftjamybnvsq" path="res://Assets/Other/pixel-art-blank-wood-sign-plate-4-png.webp" id="3_m4g60"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3p7e7"]
-size = Vector2(86.1585, 308.123)
+size = Vector2(86.1585, 1087.09)
 
 [node name="BarnHouse" type="Node2D"]
 scale = Vector2(0.288845, 0.288845)
@@ -18,7 +18,8 @@ texture = ExtResource("2_aaj84")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-11.9207, 5.19309)
+position = Vector2(-11.9207, -384.289)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3p7e7")
 
 [node name="Sign" type="Sprite2D" parent="."]

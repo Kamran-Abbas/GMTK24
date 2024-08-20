@@ -43,11 +43,11 @@ func _process(delta):
 		
 		
 func _on_area_2d_body_entered(_body):
-	Counter.addSheep()
 	sheep.scale.y = 0.01
 	sheep.scale.x = 0.01
 	withPlayer = true
 	collectionNumber = AnimalCollection.collectionNumber
 	AnimalCollection.incrCollNum()
 	Counter.currentWeight += WEIGHT
+	Counter.totalAnimals += 1
 	get_node("PlayerArea2D").queue_free()

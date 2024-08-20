@@ -41,12 +41,11 @@ func _process(delta):
 				position.x += direction * 50 * delta
 				
 func _on_area_2d_body_entered(body):
-	Counter.addPig()
 	pig.scale.y = 0.01
 	pig.scale.x = 0.01
 	withPlayer = true
 	collectionNumber = AnimalCollection.collectionNumber
 	AnimalCollection.incrCollNum()
 	Counter.currentWeight += WEIGHT
-	
+	Counter.totalAnimals += 1
 	get_node("PlayerArea2D").queue_free()

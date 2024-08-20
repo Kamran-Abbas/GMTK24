@@ -16,7 +16,7 @@ func collectAnimal():
 		collectionNumber = i
 		print(collectionNumber)
 		await get_tree().create_timer(0.4).timeout
-	finishedCounting = true
+	#finishedCounting = true
 	
 
 func incrCollNum():
