@@ -556,6 +556,14 @@ position = Vector2(436, 54)
 position = Vector2(-785, 71)
 scale = Vector2(0.57443, 0.567688)
 
+[node name="Bee3" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(-67, -8)
+scale = Vector2(0.486255, 0.474908)
+
+[node name="Bee4" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(-1353, -24)
+scale = Vector2(0.443405, 0.433057)
+
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("2_g4m52")]
@@ -634,6 +642,27 @@ shape = SubResource("RectangleShape2D_pjuo0")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldBorders/Area2D6"]
 position = Vector2(-1040, 152)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D9" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(-996, 66)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D9"]
+position = Vector2(613, -89)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D10" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(-650, 70)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D10"]
+position = Vector2(613, -93)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D11" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(-1819, 54)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D11"]
+position = Vector2(613, -93)
 shape = SubResource("RectangleShape2D_pjuo0")
 
 [node name="Signs" type="Node" parent="."]
