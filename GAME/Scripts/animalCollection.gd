@@ -1,4 +1,5 @@
 extends Node
+
 @onready var game_manager = %GameManager
 
 var collectionNumber = 0
@@ -16,6 +17,7 @@ func collectAnimal():
 		collectionNumber = i
 		print(collectionNumber)
 		await get_tree().create_timer(0.4).timeout
+	await get_tree().create_timer(0.5).timeout
 	finishedCounting = true
 	
 

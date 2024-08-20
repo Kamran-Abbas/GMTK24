@@ -13,4 +13,5 @@ func _on_area_2d_area_shape_entered(area_rid, area, area_shape_index, local_shap
 	game_manager.add_mass(mass)
 	animal.free()
 	if AnimalCollection.finishedCounting:
+		await get_tree().create_timer(2).timeout
 		game_manager.winOrLose(game_manager.scaleMass, game_manager.targetWeight, game_manager.HigherTMass, game_manager.LowerTMass)
