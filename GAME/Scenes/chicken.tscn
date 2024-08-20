@@ -52,9 +52,11 @@ autoplay = "default"
 
 [node name="rayright" type="RayCast2D" parent="."]
 target_position = Vector2(28, 0)
+collide_with_areas = true
 
 [node name="rayleft" type="RayCast2D" parent="."]
 target_position = Vector2(-27, 0)
+collide_with_areas = true
 
 [node name="PlayerArea2D" type="Area2D" parent="."]
 collision_mask = 2
