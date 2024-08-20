@@ -504,6 +504,16 @@ offset_right = -141.0
 offset_bottom = -67.0
 text = "You have x KG so far"
 
+[node name="Label4" type="Label" parent="GameManager"]
+offset_left = -2281.0
+offset_top = -84.0
+offset_right = -2120.0
+offset_bottom = 43.0
+text = "The Farmer Needs Your Help And Needs You To Take The Animals To His Barn"
+horizontal_alignment = 1
+vertical_alignment = 3
+autowrap_mode = 2
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-5, 14)
 tile_set = SubResource("TileSet_5pkq2")
