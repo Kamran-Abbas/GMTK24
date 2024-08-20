@@ -538,6 +538,10 @@ scale = Vector2(0.593464, 0.593464)
 [node name="Chicken" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
 position = Vector2(177, 58)
 
+[node name="Chicken" parent="Animals/Chicken/Chicken" instance=ExtResource("2_sytwa")]
+position = Vector2(2476.31, 212.255)
+scale = Vector2(0.895414, 0.895414)
+
 [node name="Chicken3" parent="Animals/Chicken" instance=ExtResource("2_sytwa")]
 position = Vector2(-2192, 40)
 scale = Vector2(0.641758, 0.641758)
@@ -546,6 +550,10 @@ scale = Vector2(0.641758, 0.641758)
 
 [node name="Pig" parent="Animals/Pig" instance=ExtResource("3_x378s")]
 position = Vector2(322, -77)
+
+[node name="Pig" parent="Animals/Pig/Pig" instance=ExtResource("3_x378s")]
+position = Vector2(2180.85, 464.888)
+scale = Vector2(0.880628, 0.843724)
 
 [node name="Pig2" parent="Animals/Pig" instance=ExtResource("3_x378s")]
 position = Vector2(-1456, 247)
@@ -596,10 +604,22 @@ scale = Vector2(0.482898, 0.482898)
 position = Vector2(-1761, 279)
 scale = Vector2(0.446407, 0.446407)
 
+[node name="Sheep5" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
+position = Vector2(1559, 53)
+scale = Vector2(0.565742, 0.565742)
+
 [node name="Bee" type="Node" parent="Animals"]
 
 [node name="Bee" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
 position = Vector2(436, 54)
+
+[node name="Bee" parent="Animals/Bee/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(1694.55, -338.012)
+scale = Vector2(0.855207, 0.855207)
+
+[node name="Bee" parent="Animals/Bee/Bee/Bee" instance=ExtResource("7_bpn1i")]
+position = Vector2(529.901, 360.263)
+scale = Vector2(1.39642, 1.39642)
 
 [node name="Bee2" parent="Animals/Bee" instance=ExtResource("7_bpn1i")]
 position = Vector2(-785, 71)
@@ -764,6 +784,24 @@ position = Vector2(-1120, 104)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D11"]
 position = Vector2(613, -93)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D12" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(1910, -173)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D12"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="Area2D13" type="Area2D" parent="WorldBorders/AnimalBorders"]
+position = Vector2(1797, -191)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D13"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldBorders/AnimalBorders/Area2D13"]
+position = Vector2(-259, 8)
 shape = SubResource("RectangleShape2D_pjuo0")
 
 [node name="Signs" type="Node" parent="."]
