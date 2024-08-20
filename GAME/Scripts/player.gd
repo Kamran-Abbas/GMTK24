@@ -19,7 +19,6 @@ func _process(body):
 		player_dead = true
 		animated_sprite_2d.play("death")
 		velocity.x = 0
-	
 		#pass
 
 func _physics_process(delta):
