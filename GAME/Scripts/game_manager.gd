@@ -64,7 +64,6 @@ func _ready():
 				i += 1
 				
 		
-	targetWeight = 20
 	label_2.text = "GET " + str(targetWeight) + " KG OF ANIMALS"
 	label.text = "0 KG"
 
