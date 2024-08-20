@@ -474,6 +474,15 @@ position = Vector2(58, 1)
 unique_name_in_owner = true
 script = ExtResource("1_ueq5r")
 
+[node name="Label6" type="Label" parent="GameManager"]
+offset_left = 1133.0
+offset_top = -150.0
+offset_right = 1381.0
+offset_bottom = -134.0
+theme_override_fonts/font = ExtResource("13_xt3jm")
+theme_override_font_sizes/font_size = 16
+text = "You have x KG so far"
+
 [node name="Label" type="Label" parent="GameManager"]
 z_index = 1
 offset_left = 2399.0
@@ -491,7 +500,7 @@ offset_top = 22.0
 offset_right = -2281.0
 offset_bottom = 45.0
 theme_override_fonts/font = ExtResource("13_xt3jm")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 11
 text = "Get X KG OF ANIMALS"
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -517,6 +526,15 @@ text = "The Farmer Needs Your Help And Needs You To Take The Animals To His Barn
 horizontal_alignment = 1
 vertical_alignment = 3
 autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="GameManager"]
+offset_left = -1639.0
+offset_top = -131.0
+offset_right = -1391.0
+offset_bottom = -108.0
+theme_override_fonts/font = ExtResource("13_xt3jm")
+theme_override_font_sizes/font_size = 16
+text = "You have x KG so far"
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-5, 14)

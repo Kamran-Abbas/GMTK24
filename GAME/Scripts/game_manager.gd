@@ -3,6 +3,8 @@ extends Node
 @onready var label_3 = $Label3
 @onready var label_2 = $Label2
 @onready var label = $Label
+@onready var label_5 = $Label5
+@onready var label_6 = $Label6
 
 var scaleMass = 0
 var targetWeight = 0
@@ -73,9 +75,10 @@ func add_mass(weight):
 
 func _process(delta):
 	var weight = Counter.currentWeight
-	label_3.text = "You currently have " + str(weight) + " KG"
- 
-
+	label_3.text = "You currently have " + str(weight) + " KG"#
+	label_5.text = "You currently have " + str(weight) + " KG"
+	label_6.text = "You currently have " + str(weight) + " KG"
+	
 func winOrLose(mass, targetMass, upperBound, lowerBound):
 	lowerBound = targetWeight - 2.5
 	upperBound = targetWeight + 2.5 
