@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cnatx62cw04gv" path="res://Scenes/endOfLevel.tscn" id="11_hbupt"]
 [ext_resource type="PackedScene" uid="uid://d52uysix7ia0" path="res://Scenes/barn_house.tscn" id="11_p0vct"]
 [ext_resource type="FontFile" uid="uid://bci6uoo5qf804" path="res://Assets/Fonts/PixelOperator8.ttf" id="13_xt3jm"]
-[ext_resource type="PackedScene" uid="uid://cgsmxlyirs8as" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
+[ext_resource type="PackedScene" path="res://Scenes/index_sign.tscn" id="14_ikenp"]
 [ext_resource type="AudioStream" uid="uid://dv8v2v2667db0" path="res://Assets/Other/time_for_adventure.mp3" id="15_0rvn3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cuhmi"]
@@ -563,6 +563,10 @@ scale = Vector2(0.542321, 0.542321)
 
 [node name="Sheep" type="Node" parent="Animals"]
 
+[node name="Sheep4" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
+position = Vector2(-1799, -55.9999)
+scale = Vector2(0.367938, 0.367938)
+
 [node name="Sheep" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
 position = Vector2(804, 83)
 
@@ -573,10 +577,6 @@ scale = Vector2(0.482898, 0.482898)
 [node name="Sheep3" parent="Animals/Sheep" instance=ExtResource("3_2cqk0")]
 position = Vector2(-1761, 279)
 scale = Vector2(0.446407, 0.446407)
-
-[node name="Sheep3" parent="Animals/Sheep/Sheep3" instance=ExtResource("3_2cqk0")]
-position = Vector2(-85.124, -750.436)
-scale = Vector2(0.82422, 0.82422)
 
 [node name="Bee" type="Node" parent="Animals"]
 
