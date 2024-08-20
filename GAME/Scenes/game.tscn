@@ -624,6 +624,14 @@ position = Vector2(-272, 16)
 position = Vector2(-399, 28)
 shape = SubResource("RectangleShape2D_pjuo0")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldBorders/Area2D6"]
+position = Vector2(-952, 151)
+shape = SubResource("RectangleShape2D_pjuo0")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldBorders/Area2D6"]
+position = Vector2(-1040, 152)
+shape = SubResource("RectangleShape2D_pjuo0")
+
 [node name="Signs" type="Node" parent="."]
 
 [node name="Index Sign" parent="Signs" instance=ExtResource("14_ikenp")]
